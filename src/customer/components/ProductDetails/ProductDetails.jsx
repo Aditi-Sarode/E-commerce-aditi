@@ -9,6 +9,7 @@ import { Button } from '@mui/material';
 import ProductReviewCard from './ProductReviewCard';
 import { mens_kurta } from '../../../Data/mens_kurta';
 import HomeSectionCard from '../HomeSectionCard/HomeSectionCard';
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -71,6 +72,13 @@ function classNames(...classes) {
 export default function ProductDetails() {
   const [selectedColor, setSelectedColor] = useState(product.colors[0])
   const [selectedSize, setSelectedSize] = useState(product.sizes[2])
+  const navigate=useNavigate();
+
+
+  const handleAddToCart=()=>{
+    navigate("/cart")
+
+  }
 
   return (
     <div className="bg-white lg:px-20">
@@ -208,7 +216,7 @@ export default function ProductDetails() {
                 </fieldset>
               </div>
 
-              <Button color='secondary' variant="contained" sx={{px:"2rem",py:"1rem", bgcolor:"#FF00FF"}}>
+              <Button onClick={handleAddToCart} color='secondary' variant="contained" sx={{px:"2rem",py:"1rem", bgcolor:"#FF00FF"}}>
               
                 Add to cart
               </Button>

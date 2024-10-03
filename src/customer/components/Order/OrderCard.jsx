@@ -1,10 +1,13 @@
 import { Grid } from '@mui/material';
 import React from 'react';
 import AdjustIcon from '@mui/icons-material/Adjust';
+import { useNavigate } from 'react-router-dom';
 
 const OrderCard = () => {
+
+    const navigate=useNavigate();
     return (
-        <div style={{ padding: '10px', border: '1px solid #ddd', borderRadius: '8px', marginBottom: '20px', boxShadow: '0 2px 8px rgba(0,0,0,0.1) hover:shadow-2xl' }}>
+        <div onClick={()=>navigate(`/account/order/${5}`)}  style={{ padding: '10px', border: '1px solid #ddd', borderRadius: '8px', marginBottom: '20px', boxShadow: '0 2px 8px rgba(0,0,0,0.1) hover:shadow-2xl' }}>
             <Grid container spacing={2} alignItems="center">
                 {/* Image Section */}
                 <Grid item xs={12} sm={2}>
