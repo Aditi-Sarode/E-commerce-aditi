@@ -7,6 +7,7 @@ import Product from './customer/components/Product/Product.jsx';
 import ProductDetails from './customer/components/ProductDetails/ProductDetails.jsx';
 import Cart from './customer/components/Cart/Cart.jsx';
 import CartItem from './customer/components/Cart/CartItem.jsx';
+import Checkout from './customer/components/Checkout/checkout.jsx'
 
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
      {/* <HomePage />*/}
      {/*<Product/>*/}
      {/*<ProductDetails/>*/}
-     <Cart/>
+     {/*<Cart/>*/}
+     <Checkout/>
         
       </div>
       <div>
