@@ -351,6 +351,7 @@ import { mens_kurta } from '../../../Data/mens_kurta'
 import ProductCard from './ProductCard';
 import { filters, singleFilter, sortOptions } from './FilterData'; // Adjust import path if needed
 import { FormControl, FormLabel, RadioGroup, FormControlLabel, Radio } from '@mui/material';
+import { BookOnlineRounded } from '@mui/icons-material'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -604,3 +605,18 @@ export default function Product() {
     </div>
   )
 }
+
+
+
+
+
+Boiler
+import React from 'react'
+const Cart =()=> {
+    return(
+        <div>Cart</div>
+    )
+}
+
+
+export default Cart

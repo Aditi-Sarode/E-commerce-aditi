@@ -5,6 +5,8 @@ import HomePage from './customer/pages/HomePage/HomePage'; // Correct import pat
 import Footer from './customer/components/Footer/Footer';
 import Product from './customer/components/Product/Product.jsx';
 import ProductDetails from './customer/components/ProductDetails/ProductDetails.jsx';
+import Cart from './customer/components/Cart/Cart.jsx';
+import CartItem from './customer/components/Cart/CartItem.jsx';
 
 
 function App() {
@@ -14,7 +16,8 @@ function App() {
       <div>
      {/* <HomePage />*/}
      {/*<Product/>*/}
-     <ProductDetails/>
+     {/*<ProductDetails/>*/}
+     <Cart/>
         
       </div>
       <div>
